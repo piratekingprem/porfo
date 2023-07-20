@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    scroll-behavior: smooth;
+    overflow-x: unset;
+}
+div .introduction{
+  
+    margin:215px 0px 0px 231px;
+    
+}
+#hi {
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about{
+ background-color: #33449C;
+ top: 227px;
+ height: 500px;
+ position: relative;
+
+}
+
+.waves {
+    position: absolute;
+    bottom: -115px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.waves svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 115px;
+ 
+}
+
+.waves .shape-fill {
+    fill: #33449C;
+}
+
+.hidden{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    transform: translatex(0);
+}
+.custom-shape-divider-top-1689829321 {
+    position: inherit;
+    margin-top: 190px;
+    top: 580px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    background-color: transparent;
+}
+
+.custom-shape-divider-top-1689829321 svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 115px;
+}
+
+.custom-shape-divider-top-1689829321 .shape-fill {
+    fill: #33449C;
+}
+.projects{
+    height: 500px;
+    position: relative;
+    top: 63px;
+}
+.disappear{
+    transform: translateX(100%);
+    transition: all 3s;
+}*
+.appear{
+    transform: translateX(0%);
+
+}
+.project-content{
+    position: absolute;
+    border-radius: 19% 81% 88% 12% / 52% 31% 69% 48%;
+    height: 260px;
+    width: 343px;
+    margin-top: 31px;
+    margin-left: 466px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(76,33,93,1) 66%);
+}
+
+.skills{
+    height: 500px;
+    position: relative;
+    top: 63px;
+    background-color: #33449C;
+}
+.custom-shape-divider-top-1689849186 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1689849186 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1689849186 .shape-fill {
+    fill: #33449C
+}
+#skills-content{
+    background-color: transparent;
+    margin-top: 235px;
+    margin-left: 171px;
+}
+#ulofskill{
+    background-color: transparent;
+}
+#ulofskill li{
+    background: transparent;
+    color: whitesmoke;
+    list-style: none;
+    line-height: 2.5;
+}
+
+.progress{
+    height: 6px;
+    position: absolute;
+    display: inline-flex;
+    width: 100px;
+    margin: 17px 2px 2px 22px;
+    border-radius: 5px;
+    background-color: gold;
+}
+.dec{
+    transform: scaleX(0.2) translateX(-100px);
+    transition: all 6s;
+}
+.inc{
+    transform: scaleX(1) translateX(0px);
+}

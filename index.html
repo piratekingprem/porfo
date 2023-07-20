@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prem_Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="introduction">
+            <div>
+                <h4 id="hi">Hello,it's me <br><h1 style="top: 5px; position: relative;">PremChand Mali </h1> </h4>
+                <p style="position: relative; top: 10px;">Lorem ipsum dolor, sit amet <br>consectetur adipisicing elit. <br> Debitis, totam.</p>
+                <h4 style="margin-top: 40px;font-size: larger; font-family: monospace; ">scroll for more <hr style="width: 130px;"></h4>
+            </div>
+        </div>
+        <div class="waves">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="about">
+            <div style="position: relative;margin: 100px 0px 0px 0px ; background-color: transparent;"> 
+                <h1 class="about-class" style="position: absolute; top: 166px;left:233px;background-color: transparent;color: whitesmoke;"> About Me <p  style=" line-height: 2;background: transparent;color: aliceblue;font-size: 15px;">I have a creative mindset with practical approch to real world problems. <br> My area of interest is web development and currently studying backend. <br>  My hobbies are playing chess and reading books</p></h1>
+                <iframe style="border: none;background: transparent;position: absolute;margin: -150px 0px 0px 780px;" width="500" height="800" src="https://rive.app/community/3984-8296-car/embed" allowfullscreen></iframe>
+            </div>
+            
+        </div>
+      
+        <div class="custom-shape-divider-top-1689829321">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="projects">  
+            <h1 style="font-family: monospace;display: flex; justify-content: center;margin-left: 650px;">Project </h1>
+            <div class="ul" style="height: 1.5px;width: 120px;background-color: rgb(89, 88, 88);display: flex; justify-content: center;margin-left: 870px;margin-top: 5px;"></div>
+            <div class="project-content"> <h4 style="background-color: transparent;color: antiquewhite;position: absolute;margin-left: 80px;margin-top: 40px;">weather app in react </h4></div>
+            <div class="project-content" style="margin-left: 100px;"> <h4 style="background-color: transparent;color: antiquewhite;position: absolute;margin-left: 80px;margin-top: 40px;">weather app in react </h4></div>
+            <div class="project-content" style="margin-left: 850px;"> <h4 style="background-color: transparent;color: antiquewhite;position: absolute;margin-left: 80px;margin-top: 40px;">weather app in react </h4></div>
+           
+        </div>
+        <div class="skills">
+            <div class="custom-shape-divider-top-1689849186">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <h1 style="background: transparent;position: absolute;color: white;margin: 160px 0px 0px 160px;">Skills</h1>
+            <div id="skills-content"  style="z-index: 9; position: absolute;">
+                <ul id="ulofskill">
+                    <li >React <span class="progress"></span></li>
+                    <li>Javascript <span class="progress" ></span></li>
+                    <li>Html <span class="progress"></span></li>
+                    <li>css <span class="progress"></span></li>
+                    <li>node.js <span class="progress"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+    <script>
+        const observer = new IntersectionObserver((enteries)=>{
+            enteries.forEach((entry)=>{
+               
+                if(entry.isIntersecting){
+                    entry.target.classList.add('show')
+                }else{
+                    entry.target.classList.add('hidden')
+                }
+            });
+        })
+        const hidden = document.querySelectorAll('.about-class');
+        hidden.forEach((el) => observer.observe(el));
+
+        const observer2 = new IntersectionObserver((enteries)=>{
+            enteries.forEach((entry)=>{
+              
+                if(entry.isIntersecting){
+                    entry.target.classList.add('appear')
+                }else{
+                    entry.target.classList.add('disappear')
+                }
+            });
+        })
+
+        const line = document.querySelectorAll(".ul");
+        line.forEach((el) => observer2.observe(el));
+        const content = document.querySelectorAll(".project-content");
+        content.forEach((el)=> observer2.observe(el))
+
+        const observer3 = new IntersectionObserver((enteries)=>{
+            enteries.forEach((entry)=>{
+                console.log(entry)
+                if(entry.isIntersecting){
+                    entry.target.classList.add('inc')
+                }else entry.target.classList.add('dec')
+            });
+        })
+
+        const progress = document.querySelectorAll('.progress');
+        progress.forEach((el)=> observer3.observe(el));
+    </script>
+</html>
